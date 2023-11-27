@@ -1,0 +1,100 @@
+<!-- Desiegned for mobile -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout-form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <main id="container">
+      <section id="cart" class="bg-1">
+        <div class="cart-header wrapper">
+          <p class="text-lg">Cart</p>
+          <span><i class="fa fa-shopping-cart" style="font-size: 24px"></i> 4</span>
+        </div>
+        <div class="cart-items">
+          <p class="wrapper"><a href="#" class="item">Item 1</a> <span class="price">$17</span></p>
+          <p class="wrapper"><a href="#" class="item">Item 2</a> <span class="price">$19</span></p>
+          <p class="wrapper"><a href="#" class="item">Item 3</a> <span class="price">$12</span></p>
+          <p class="wrapper"><a href="#" class="item">Item 4</a> <span class="price">$13</span></p>
+        </div>
+        <div class="cart-footer wrapper">
+          <p class="text-sm">Total</p>
+          <span class="price"><strong>$51</strong></span>
+        </div>
+      </section>
+
+      <section id="payment" class="bg-1">
+        <p class="text-lg payment-title">Payment</p>
+        <section id="card">
+          <!-- Payment part1  -->
+
+          <p class="text-sm my-1">Accepted Cards</p>
+          <div class="card-icon">
+            <i class="fa fa-cc-visa" style="font-size: 25px;margin-left: .3rem;"></i>
+            <i class="fa fa-cc-amex" style="font-size: 25px;margin-left: .3rem; color: orangered"></i>
+            <i class="fa fa-cc-jcb" style="font-size: 25px;margin-left: .3rem; color: blue"></i>
+            <i class="fa fa-cc-paypal" style="font-size: 25px;margin-left: .3rem;color: orange"></i>
+          </div>
+          <div class="card-info">
+            <form action="#" class="form-group">
+              <label class="lead" for="name">Name on Card</label>
+              <input class="form-control" type="text" name="name" id="name" placeholder="Jhon More" />
+
+              <label class="lead" for="creditnum">Credit Card number</label>
+              <input class="form-control" type="number" name="ceditnum" id="creditnum"
+                placeholder="1111-2222-3333-4444" />
+
+              <label class="lead" for="exp">Exp Month</label>
+              <input class="form-control" type="text" name="exp" id="exp" placeholder="September" />
+
+              <label class="lead" for="cvv">Cvv</label>
+              <input class="form-control" type="number" name="cvv" id="cvv" placeholder="357" />
+            </form>
+          </div>
+        </section>
+
+        <!-- payment part 2  -->
+        <section id="user-info">
+          <p class="text-lg  my-1">Billing Address</p>
+          <form action="#" class="form-group">
+            <label for="fullname" class="lead">
+              <i class="fa fa-user" style="font-size: 18px ;margin-right:5px"></i>
+              Fullname</label>
+            <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Jhon M. Doe" />
+
+            <label for="email" class="lead">
+              <i class="fa fa-envelope" style="font-size: 18px ;margin-right:5px"></i>
+              Email</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Jhondoe@mail.com" />
+
+            <label for="addres" class="lead">
+              <i class="fa fa-id-card" style="font-size: 18px ;margin-right:5px"></i>
+              Addres</label>
+            <input class="form-control" type="text" name="addres" id="addres" placeholder="5M,15th street ,New york" />
+
+            <label for="zip" class="lead"> Zip code</label>
+            <input class="form-control" type="number" name="zip" id="zip" placeholder="1001" />
+
+          </form>
+        </section>
+
+        <section id="payment-footer">
+          <div class="address-check">
+            <input class='form-check' type="checkbox" name="shipping-check" id="shipping-check">
+            <label class="address-text" for="shipping-check">Shipping address same as billing</label>
+          </div>
+          <button class="btn" type="submit">Countinue to checkout</button>
+        </section>
+      </section>
+
+    </main>
+  </body>
+
+</html>
